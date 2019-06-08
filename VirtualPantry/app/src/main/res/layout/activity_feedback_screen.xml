@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/feedbackBox"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_colour"
+    tools:context=".AppScreens.FeedbackScreen">
+
+    <EditText
+        android:id="@+id/feedbackText"
+        android:layout_width="341dp"
+        android:layout_height="408dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:autofillHints=""
+        android:background="@color/colorMenu"
+        android:ems="10"
+        android:hint="@string/feedback_screen_enter_feedback_here"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/feedbackSubmitFeedback"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="75dp"
+        android:background="@drawable/accept_button_layout"
+        android:text="@string/feedback_screen_submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/cancelFeedback"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="75dp"
+        android:background="@drawable/accept_button_layout"
+        android:text="@string/feedback_screen_cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <include layout="@layout/layout_bottom_navigation_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

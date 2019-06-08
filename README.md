@@ -1,1 +1,1 @@
-WasteLess-Food-Expiry-Manager
+WasteLess

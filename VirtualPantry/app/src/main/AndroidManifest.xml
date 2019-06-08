@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.expmngr.virtualpantry"
+    android:versionCode="160010100"
+    android:versionName="1.1.0">
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_food"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AppScreens.NotificationSettings"></activity>
+        <activity android:name=".AppScreens.MainMenuPlaceholder" />
+        <activity android:name=".AppScreens.AddItems.ConfirmScanFoods" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocr" />
+
+        <activity android:name=".AppScreens.ShoppingList" />
+        <activity android:name=".AppScreens.FeedbackScreen" />
+        <activity android:name=".readCSVFiles" />
+        <activity android:name=".AppScreens.AddItems.ScanBarcode" />
+        <activity android:name=".AppScreens.AddItems.ScanReceipt" />
+        <activity android:name=".AppScreens.AddItems.AddItemManually" />
+        <activity android:name=".AppScreens.EditItem" />
+        <activity android:name=".AppScreens.ViewPantry" />
+        <activity android:name=".AppScreens.Settings" />
+        <activity android:name=".AppScreens.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AppScreens.AddNewItems" />
+        <activity android:name=".InputMenu" />
+        <activity android:name=".MainActivity"></activity>
+        <receiver android:name=".Utils.NotificationPublisher" />
+    </application>
+
+</manifest>
